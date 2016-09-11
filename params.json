@@ -1,0 +1,6 @@
+{
+  "name": "WorkOut",
+  "tagline": "Workout Together.",
+  "body": "## Idea\r\nWho likes working out alone? I know I do not. I have a passion for working out and think that living a healthy lifestyle is important. According to [Gallop](http://www.gallup.com/), 2015 was a record high for adult obesity rates in the United States reaching a staggering 28%. After reading these numbers, I wanted to create an app that allows users to motivate each other, track each others goals and go to the gym together. People who have a motivated partner at the gym as a companion are more likely to attend the gym. This is why I started to create an iOS workout app.\r\n\r\n## Implementation\r\nI am fairly new to Swift and iOS programming. I have done a lot of research and watched many videos to start to create my dream mobile app. I am currently in stage 1 of my development. I have an idea, back end, and user stories that I want to create. The source code on Github is just a sample of what I have created so far.\r\n\r\n## Contribution\r\nFeel free to contact me at [johnston.matt.vt@gmail.com](mailto:johnston.matt.vt@gmail.com) for questions and if you are willing to contribute.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
