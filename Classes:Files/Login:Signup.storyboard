@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XUM-kN-U1t">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--login-->
+        <scene sceneID="gkQ-tG-J33">
+            <objects>
+                <viewController storyboardIdentifier="loginViewC" title="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UOp-CU-vic" customClass="LoginVC" customModule="Gym_Buddy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Tr-nE-5re"/>
+                        <viewControllerLayoutGuide type="bottom" id="QUe-PN-A5d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="KoA-Bj-RwN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Z6-QK-5yL">
+                                <rect key="frame" x="74" y="334" width="226" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qg1-5N-aIR">
+                                <rect key="frame" x="74" y="285" width="226" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTf-JM-XyB">
+                                <rect key="frame" x="114" y="617" width="146" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Forgot Password?">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="wVH-6c-pCl" kind="push" identifier="toForgotPassword" id="dOj-fD-4Xk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57n-4b-TbN">
+                                <rect key="frame" x="157" y="491" width="61" height="24"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Log In">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="24" name="HelveticaNeue-Thin"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="UOp-CU-vic" eventType="touchUpInside" id="F0R-zO-dkc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qg1-5N-aIR" secondAttribute="trailing" constant="55" id="0H0-gu-gxV"/>
+                            <constraint firstItem="Qg1-5N-aIR" firstAttribute="top" secondItem="0Tr-nE-5re" secondAttribute="bottom" constant="221" id="16t-mi-73v"/>
+                            <constraint firstItem="57n-4b-TbN" firstAttribute="leading" secondItem="KoA-Bj-RwN" secondAttribute="leadingMargin" constant="137" id="1bP-cR-M93"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Z6-QK-5yL" secondAttribute="trailing" constant="55" id="20N-c4-8Sx"/>
+                            <constraint firstItem="57n-4b-TbN" firstAttribute="top" secondItem="0Tr-nE-5re" secondAttribute="bottom" constant="378" id="24o-N0-QsJ"/>
+                            <constraint firstItem="QUe-PN-A5d" firstAttribute="top" secondItem="Qg1-5N-aIR" secondAttribute="bottom" constant="352" id="94D-lE-m7t"/>
+                            <constraint firstItem="QUe-PN-A5d" firstAttribute="top" secondItem="57n-4b-TbN" secondAttribute="bottom" constant="201" id="Ffa-89-DZg"/>
+                            <constraint firstItem="QUe-PN-A5d" firstAttribute="top" secondItem="1Z6-QK-5yL" secondAttribute="bottom" constant="303" id="O8M-w1-LHS"/>
+                            <constraint firstItem="eTf-JM-XyB" firstAttribute="leading" secondItem="KoA-Bj-RwN" secondAttribute="leadingMargin" constant="103" id="Ol9-te-ubt"/>
+                            <constraint firstItem="Qg1-5N-aIR" firstAttribute="leading" secondItem="KoA-Bj-RwN" secondAttribute="leadingMargin" constant="54" id="ROg-tI-WJD"/>
+                            <constraint firstItem="QUe-PN-A5d" firstAttribute="top" secondItem="eTf-JM-XyB" secondAttribute="bottom" constant="20" id="awo-Qp-8fF"/>
+                            <constraint firstItem="1Z6-QK-5yL" firstAttribute="top" secondItem="0Tr-nE-5re" secondAttribute="bottom" constant="270" id="bXl-KH-iok"/>
+                            <constraint firstItem="1Z6-QK-5yL" firstAttribute="leading" secondItem="KoA-Bj-RwN" secondAttribute="leadingMargin" constant="54" id="e8d-x5-pEi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eTf-JM-XyB" secondAttribute="trailing" constant="104" id="kdA-d4-JwO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="57n-4b-TbN" secondAttribute="trailing" constant="137" id="rsK-gp-PjT"/>
+                            <constraint firstItem="eTf-JM-XyB" firstAttribute="top" secondItem="0Tr-nE-5re" secondAttribute="bottom" constant="553" id="xXf-Tm-pzT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3w0-MO-Ke0">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="gxP-RX-Bef"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="Qg1-5N-aIR" id="G17-sr-UqV"/>
+                        <outlet property="password" destination="1Z6-QK-5yL" id="YlR-n8-NI9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDW-Jw-OOa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428.5" y="-4172.5"/>
+        </scene>
+        <!--registerView-->
+        <scene sceneID="o0Y-fH-j1J">
+            <objects>
+                <viewController storyboardIdentifier="registerViewC" title="registerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XXL-wg-2B1" customClass="RegisterVC" customModule="Gym_Buddy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h2k-2d-t7d"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hrr-HV-WEu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hPp-Kl-oyI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-WR-miZ">
+                                <rect key="frame" x="78" y="339" width="219" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtv-Id-1G6">
+                                <rect key="frame" x="78" y="396" width="219" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rq5-tS-yhN">
+                                <rect key="frame" x="78" y="458" width="219" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sB8-4g-r1i">
+                                <rect key="frame" x="78" y="87" width="219" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-oG-cKl">
+                                <rect key="frame" x="78" y="150" width="219" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MJ-Uv-4bJ">
+                                <rect key="frame" x="60" y="523" width="254" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Passwords do not match">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBC-3Y-MNA">
+                                <rect key="frame" x="60" y="523" width="254" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="All Fields Are Required">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-xg-M7R">
+                                <rect key="frame" x="141" y="604" width="92" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerTapped:" destination="XXL-wg-2B1" eventType="touchUpInside" id="dUJ-f6-ouy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7i3-XQ-JAN"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="passwordField" destination="1MJ-Uv-4bJ" id="m60-xH-RPy"/>
+                        <outlet property="requiredFields" destination="hBC-3Y-MNA" id="m2k-oB-VcQ"/>
+                        <outlet property="txtConfirmPassword" destination="rq5-tS-yhN" id="t5I-E7-r3o"/>
+                        <outlet property="txtEmailAddress" destination="kV1-WR-miZ" id="Rer-Te-hQW"/>
+                        <outlet property="txtFirstName" destination="sB8-4g-r1i" id="nA8-8K-b2y"/>
+                        <outlet property="txtPassword" destination="dtv-Id-1G6" id="ojR-iN-eiV"/>
+                        <outlet property="txtlastName" destination="9ka-oG-cKl" id="gLi-YR-u6v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uT0-08-NP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616.5" y="-3330.5"/>
+        </scene>
+        <!--forgotPasswordView-->
+        <scene sceneID="RKW-ZQ-6Dh">
+            <objects>
+                <viewController storyboardIdentifier="forgotPasswordViewC" title="forgotPasswordView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wVH-6c-pCl" customClass="ForgotPasswordVC" customModule="Gym_Buddy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WdX-LQ-Xe6"/>
+                        <viewControllerLayoutGuide type="bottom" id="jFl-nE-lWs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="bR7-cf-WHs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMm-S4-gTS">
+                                <rect key="frame" x="68" y="244" width="239" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UjJ-q6-q5x">
+                                <rect key="frame" x="101" y="374" width="172" height="40"/>
+                                <color key="backgroundColor" name="selectedMenuItemTextColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Reset Password">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="24" name="HelveticaNeue-Thin"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="sendRecoveryEmailTapped:" destination="wVH-6c-pCl" eventType="touchUpInside" id="wb6-K9-mDv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UjJ-q6-q5x" firstAttribute="leading" secondItem="bR7-cf-WHs" secondAttribute="leadingMargin" constant="104" id="13g-Cr-rZA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UjJ-q6-q5x" secondAttribute="trailing" constant="104" id="Biz-hL-ytX"/>
+                            <constraint firstItem="DMm-S4-gTS" firstAttribute="leading" secondItem="bR7-cf-WHs" secondAttribute="leadingMargin" constant="48" id="D6r-0b-8Cs"/>
+                            <constraint firstItem="jFl-nE-lWs" firstAttribute="top" secondItem="UjJ-q6-q5x" secondAttribute="bottom" constant="255" id="Jfd-Ws-mCo"/>
+                            <constraint firstItem="jFl-nE-lWs" firstAttribute="top" secondItem="DMm-S4-gTS" secondAttribute="bottom" constant="393" id="LpG-PO-olm"/>
+                            <constraint firstItem="DMm-S4-gTS" firstAttribute="top" secondItem="WdX-LQ-Xe6" secondAttribute="bottom" constant="180" id="TgG-zm-1Y6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DMm-S4-gTS" secondAttribute="trailing" constant="48" id="X8E-Rc-on4"/>
+                            <constraint firstItem="UjJ-q6-q5x" firstAttribute="top" secondItem="WdX-LQ-Xe6" secondAttribute="bottom" constant="308" id="j96-d2-eCw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hlB-Nk-jHy">
+                        <barButtonItem key="backBarButtonItem" title="Login" id="ONg-lf-MWp"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="email" destination="DMm-S4-gTS" id="dH6-Xi-2no"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpe-re-tGn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020.5" y="-4172.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PpJ-2I-FOW">
+            <objects>
+                <navigationController storyboardIdentifier="LoginNaviC" automaticallyAdjustsScrollViewInsets="NO" id="XUM-kN-U1t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qQd-oG-7Q4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UOp-CU-vic" kind="relationship" relationship="rootViewController" id="gYB-Zy-imP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iR-6Q-PDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616" y="-4173"/>
+        </scene>
+    </scenes>
+</document>

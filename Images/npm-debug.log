@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'link',
+1 verbose cli   'parse-server',
+1 verbose cli   '/Users/Sir/Desktop/GymBuddy/npm-debug.log' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose install where, what [ '/usr/local/lib', [ 'parse-server' ] ]
+5 verbose install where, what [ '/usr/local/lib',
+5 verbose install   [ '/Users/Sir/Desktop/GymBuddy/npm-debug.log' ] ]
+6 silly cache add args [ 'parse-server', null ]
+7 verbose cache add spec parse-server
+8 silly cache add args [ '/Users/Sir/Desktop/GymBuddy/npm-debug.log', null ]
+9 verbose cache add spec /Users/Sir/Desktop/GymBuddy/npm-debug.log
+10 silly cache add parsed spec { raw: '/Users/Sir/Desktop/GymBuddy/npm-debug.log',
+10 silly cache add   scope: null,
+10 silly cache add   name: null,
+10 silly cache add   rawSpec: '/Users/Sir/Desktop/GymBuddy/npm-debug.log',
+10 silly cache add   spec: '/Users/Sir/Desktop/GymBuddy/npm-debug.log',
+10 silly cache add   type: 'local' }
+11 silly cache add parsed spec { raw: 'parse-server',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'parse-server',
+11 silly cache add   spec: '/Users/Sir/Desktop/GymBuddy/parse-server',
+11 silly cache add   type: 'directory' }
+12 silly addLocalTarball shasum (computed) 6e9ae84af98c8651f966545e4e59f6c7bea368a8
+13 verbose addTmpTarball /Users/Sir/Desktop/GymBuddy/npm-debug.log not in flight; adding
+14 verbose addTmpTarball validating metadata from /Users/Sir/Desktop/GymBuddy/npm-debug.log
+15 verbose tar unpack /Users/Sir/Desktop/GymBuddy/npm-debug.log
+16 verbose tar unpacking to /var/folders/sd/kfj265bj6gdclxkqr2j91p5w0000gn/T/npm-3495-3a80e241/unpack-c4e8c0929195
+17 silly gentlyRm /var/folders/sd/kfj265bj6gdclxkqr2j91p5w0000gn/T/npm-3495-3a80e241/unpack-c4e8c0929195 is being purged
+18 verbose gentlyRm don't care about contents; nuking /var/folders/sd/kfj265bj6gdclxkqr2j91p5w0000gn/T/npm-3495-3a80e241/unpack-c4e8c0929195
+19 silly gunzTarPerm modes [ '755', '644' ]
+20 verbose addLocalDirectory /Users/Sir/.npm/parse-server/2.2.9/package.tgz not in flight; packing
+21 verbose tar pack [ '/Users/Sir/.npm/parse-server/2.2.9/package.tgz',
+21 verbose tar pack   '/Users/Sir/Desktop/GymBuddy/parse-server' ]
+22 verbose tarball /Users/Sir/.npm/parse-server/2.2.9/package.tgz
+23 verbose folder /Users/Sir/Desktop/GymBuddy/parse-server
+24 info prepublish parse-server@2.2.9
+25 verbose unsafe-perm in lifecycle true
+26 error not a package /Users/Sir/Desktop/GymBuddy/npm-debug.log
+27 error addLocal Could not install /Users/Sir/Desktop/GymBuddy/npm-debug.log
+28 info parse-server@2.2.9 Failed to exec prepublish script
+29 error addLocalDirectory Could not pack /Users/Sir/Desktop/GymBuddy/parse-server to /Users/Sir/.npm/parse-server/2.2.9/package.tgz
+30 error addLocal Could not install /Users/Sir/Desktop/GymBuddy/parse-server
+31 verbose stack Error: ENOENT, open '/var/folders/sd/kfj265bj6gdclxkqr2j91p5w0000gn/T/npm-3495-3a80e241/unpack-c4e8c0929195/package.json'
+31 verbose stack     at Error (native)
+32 verbose cwd /Users/Sir/Desktop/GymBuddy
+33 error Darwin 15.4.0
+34 error argv "node" "/usr/local/bin/npm" "link" "parse-server" "/Users/Sir/Desktop/GymBuddy/npm-debug.log"
+35 error node v0.12.2
+36 error npm  v2.7.4
+37 error path /var/folders/sd/kfj265bj6gdclxkqr2j91p5w0000gn/T/npm-3495-3a80e241/unpack-c4e8c0929195/package.json
+38 error code ENOENT
+39 error errno -2
+40 error enoent ENOENT, open '/var/folders/sd/kfj265bj6gdclxkqr2j91p5w0000gn/T/npm-3495-3a80e241/unpack-c4e8c0929195/package.json'
+40 error enoent This is most likely not a problem with npm itself
+40 error enoent and is related to npm not being able to find a file.
+41 verbose exit [ -2, true ]

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hnk-aI-6hn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Layer PageVC-->
+        <scene sceneID="oeZ-Mh-lcC">
+            <objects>
+                <viewController storyboardIdentifier="topLayerPageVC" id="hnk-aI-6hn" customClass="TopLayerPageVC" customModule="Gym_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ESZ-50-Osl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vod-zj-wZK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vk0-fE-ZU8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9h4-ym-dht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1353" y="-2928"/>
+        </scene>
+        <!--Main ContentVC-->
+        <scene sceneID="yVO-ZS-6vZ">
+            <objects>
+                <viewController storyboardIdentifier="MainContentVC" id="pUb-5A-Dyj" customClass="MainContentVC" customModule="Gym_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KoQ-wd-5gV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ODp-II-a2d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hkB-rP-yKv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1e-03-ypu" userLabel="gradientView">
+                                <rect key="frame" x="0.0" y="582" width="414" height="154"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCn-wC-vh0">
+                                <rect key="frame" x="20" y="546" width="374" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="eu4-gc-hoU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTY-oU-hpe">
+                                <rect key="frame" x="184" y="419" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG4-fH-Jg0">
+                                <rect key="frame" x="20" y="68" width="374" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="xNy-UJ-HoF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UG4-fH-Jg0" firstAttribute="leading" secondItem="DCn-wC-vh0" secondAttribute="leading" id="ALE-xa-Nf1"/>
+                            <constraint firstItem="DCn-wC-vh0" firstAttribute="top" secondItem="QTY-oU-hpe" secondAttribute="bottom" constant="97" id="IMu-N9-VSe"/>
+                            <constraint firstAttribute="bottom" secondItem="DCn-wC-vh0" secondAttribute="bottom" constant="20" symbolic="YES" id="NnK-nG-oFX"/>
+                            <constraint firstItem="UG4-fH-Jg0" firstAttribute="top" secondItem="KoQ-wd-5gV" secondAttribute="bottom" constant="48" id="PDi-Hh-Pki"/>
+                            <constraint firstItem="UG4-fH-Jg0" firstAttribute="trailing" secondItem="DCn-wC-vh0" secondAttribute="trailing" id="Rff-lr-PtN"/>
+                            <constraint firstItem="P1e-03-ypu" firstAttribute="centerX" secondItem="DCn-wC-vh0" secondAttribute="centerX" id="Wr1-Ef-g5c"/>
+                            <constraint firstItem="P1e-03-ypu" firstAttribute="bottom" secondItem="ODp-II-a2d" secondAttribute="top" id="bwT-c6-Jgz"/>
+                            <constraint firstItem="P1e-03-ypu" firstAttribute="leading" secondItem="hkB-rP-yKv" secondAttribute="leading" id="eaX-bd-bvC"/>
+                            <constraint firstItem="UG4-fH-Jg0" firstAttribute="trailing" secondItem="hkB-rP-yKv" secondAttribute="trailingMargin" id="hS7-Df-IQi"/>
+                            <constraint firstItem="P1e-03-ypu" firstAttribute="top" secondItem="QTY-oU-hpe" secondAttribute="bottom" constant="133" id="kPu-OA-d4R"/>
+                            <constraint firstItem="UG4-fH-Jg0" firstAttribute="leading" secondItem="hkB-rP-yKv" secondAttribute="leadingMargin" id="s2v-aK-voR"/>
+                            <constraint firstItem="QTY-oU-hpe" firstAttribute="centerX" secondItem="DCn-wC-vh0" secondAttribute="centerX" id="yRQ-MQ-X81"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="gradientView" destination="P1e-03-ypu" id="VWx-Zx-szU"/>
+                        <outlet property="mainTitleLabel" destination="UG4-fH-Jg0" id="Gc1-FJ-C9E"/>
+                        <outlet property="navigationButton" destination="QTY-oU-hpe" id="f1k-KV-be5"/>
+                        <outlet property="subTitleLabel" destination="DCn-wC-vh0" id="taT-bm-yTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xqb-iP-V3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="-2928"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="QHE-xr-Gfi">
+            <objects>
+                <pageViewController storyboardIdentifier="pageControllerVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="OoB-Zg-XIN" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ref-PL-axg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1861" y="-2923"/>
+        </scene>
+    </scenes>
+</document>
